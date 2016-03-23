@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="javafiles.KlassKamrat" table="KLASSKAMRAT">
+		<id name="id" column="ID" type="integer">
+			<generator class="assigned"></generator>
+		</id>
+		<property name="fname" column="f_name" type="string"></property>
+		<property name="lname" column="l_name" type="string"></property>
+		<property name="hobby" column="hobby" type="string"></property>
+		<property name="birthYear" column="birth_year" type="integer"></property>
+		<property name="mobile" column="mobile" type="integer"></property>
+	</class>
+</hibernate-mapping>
